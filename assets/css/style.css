@@ -12,9 +12,9 @@ body {
 
 .msg_container_base{
   background: #1e5799;
-background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #7db9e8 0%, #7db9e8 2%, #7db9e8 34%, #7db9e8 34%, #7db9e8 48%, #7db9e8 64%, #7db9e8 64%, #207cca 88%, #207cca 88%, #207cca 91%, #207cca 91%, #207cca 94%, #207cca 94%, #207cca 97%, #207cca 99%, #2989d8 100%, #2989d8 100%, #207cca 100%);
-background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#7db9e8 0%,#7db9e8 2%,#7db9e8 34%,#7db9e8 34%,#7db9e8 48%,#7db9e8 64%,#7db9e8 64%,#207cca 88%,#207cca 88%,#207cca 91%,#207cca 91%,#207cca 94%,#207cca 94%,#207cca 97%,#207cca 99%,#2989d8 100%,#2989d8 100%,#207cca 100%);
-background: linear-gradient(to right, #1e5799 0%,#2989d8 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#7db9e8 0%,#7db9e8 2%,#7db9e8 34%,#7db9e8 34%,#7db9e8 48%,#7db9e8 64%,#7db9e8 64%,#207cca 88%,#207cca 88%,#207cca 91%,#207cca 91%,#207cca 94%,#207cca 94%,#207cca 97%,#207cca 99%,#2989d8 100%,#2989d8 100%,#207cca 100%);
+background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 0%, #207cca 0%, #2989d8 0%, #7db9e8 0%, #2989d8 0%, #7db9e8 28%, #7db9e8 32%, #7db9e8 34%, #7db9e8 34%, #7db9e8 48%, #7db9e8 64%, #7db9e8 64%, #207cca 88%, #207cca 88%, #207cca 91%, #207cca 91%, #207cca 94%, #207cca 94%, #207cca 97%, #207cca 99%, #2989d8 100%, #2989d8 100%, #207cca 100%);
+background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#7db9e8 0%,#2989d8 0%,#7db9e8 28%,#7db9e8 32%,#7db9e8 34%,#7db9e8 34%,#7db9e8 48%,#7db9e8 64%,#7db9e8 64%,#207cca 88%,#207cca 88%,#207cca 91%,#207cca 91%,#207cca 94%,#207cca 94%,#207cca 97%,#207cca 99%,#2989d8 100%,#2989d8 100%,#207cca 100%);
+background: linear-gradient(to right, #1e5799 0%,#2989d8 0%,#207cca 0%,#2989d8 0%,#7db9e8 0%,#2989d8 0%,#7db9e8 28%,#7db9e8 32%,#7db9e8 34%,#7db9e8 34%,#7db9e8 48%,#7db9e8 64%,#7db9e8 64%,#207cca 88%,#207cca 88%,#207cca 91%,#207cca 91%,#207cca 94%,#207cca 94%,#207cca 97%,#207cca 99%,#2989d8 100%,#2989d8 100%,#207cca 100%);
   margin: 0;
   padding: 0 10px 10px;
   max-height:80vh;
