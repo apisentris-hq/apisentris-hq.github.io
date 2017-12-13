@@ -186,25 +186,127 @@ background: linear-gradient(45deg, #7db9e8 26%,#2989d8 97%);
     }
 }
 
+@media only screen and (max-width : 1024px) {
+
+    .img-avatar {
+      right: 75% !important;
+    }
+
+
+}
+
+@media only screen and (max-width : 850px) {
+
+     .hide {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+      .hide {
+        margin-top: -90px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 850px) {
+    .img-avatar {
+        bottom: 17% !important;
+       right: 83% !important;
+    }
+    .footer-custome .sosmed-footer ul {
+        float: left;
+    }
+    .footer-custome .powered {
+        top: -3px;
+        right: -7%;
+    }
+
+    
+}
+
+@media only screen and (max-width : 768px) {
+
+ .hide {
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width : 736px) {
+
+    .img-avatar {
+       
+       right: 85% !important;
+    }
+
+     .hide {
+        margin-top: -90px;
+    }
+}
+
+@media only screen and (max-width : 667px) {
+
+     .bg-img .card:after {
+        display: none;
+    }
+     .img-avatar {
+       display: none;
+    }
+
+     .hide {
+        margin-top: -140px;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+     .hide {
+        margin-top: -30px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+
+     .bg-img .card:after {
+        display: none;
+    }
+    
+     .hide {
+        margin-top: -40px;
+    }
+}
+
+/* Smartphones (Apple iphone 5 landscape) ----------- */
+@media only screen and (max-width : 568px) {
+     .img-avatar {
+        display: none;
+     }
+
+     .bg-img .card:nth-child(6):after {
+        display: none;
+    }
+
+    .hide {
+        margin-top: -200px;
+    }
+}
 
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
     .bg-img .card {
         width: 95%;
     }
-    .hide {
-        margin-top: -40px;
-    }
+    
     .navbar-header-top {
         padding-top: 3px;
     }
     .fixed-top {
         position: inherit;
     }
-    .img-avatar {
-        display: none;
-    }
+   
     .bg-img .card:nth-child(6):after {
         display: none;
     }
@@ -258,29 +360,50 @@ background: linear-gradient(45deg, #7db9e8 26%,#2989d8 97%);
     }
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
+
+@media only screen and (max-width : 480px) {
+     .img-avatar {
+        position: absolute !important;
+        right: 40% !important;
+        bottom: 0% !important;
+        top: 40% !important;
+    }
+}
+
+@media only screen and (max-width : 384px) {
+
+    .hide {
+        margin-top: -255px;
+    }
+}
+
+@media only screen and (max-width : 375px) {
+
+    .hide {
+        margin-top: -240px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+    .hide {
+        margin-top: -200px;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
 /* Styles */
+    .card .btn {
+        right: 25px;
+        top: 61%;
+    }
+
+    .img-avatar {
+       display: none;
+    }
 }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 850px) {
-    .img-avatar {
-        bottom: 17%;
-    }
-    .footer-custome .sosmed-footer ul {
-        float: left;
-    }
-    .footer-custome .powered {
-        top: -3px;
-        right: -7%;
-    }
-}
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -323,6 +446,7 @@ iPad 3
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
