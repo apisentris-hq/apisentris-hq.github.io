@@ -26,7 +26,7 @@ background: linear-gradient(to right, #1e5799 0%,#2989d8 0%,#207cca 0%,#2989d8 0
     padding-left: 46px;
 }
 .nav-brand a img {
-  width: 15%;
+  width: 10%;
 }
 .bg-img .card {
     margin: 0 auto;
@@ -88,7 +88,7 @@ background: linear-gradient(to right, #1e5799 0%,#2989d8 0%,#207cca 0%,#2989d8 0
     border-radius: 50%;
     position: absolute;
     right: 35px;
-    top: 55%;
+    bottom: 37px;
   }
   .card img {
     margin: 10px 0;
