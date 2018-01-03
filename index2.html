@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Make API-centric to your backend in no time">
+  <meta name="author" content="Ardian Bahtiarsyah">
+  <title>Apisentris - API as a Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111267381-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111267381-1');
+  </script>
+
+</head>
+<body class='msg_container_base'>
+  <div class="bg-img">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container nav-brand navbar-header-top">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/apisentris.png"></a>
+      </div>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+  <div class="hide">
+    <div class="panel panel-primary" style="border:0px">
+      <div class="panel-body">
+        <div class="chat-log">  </div>
+      </div>
+    </div>
+    <div class="img-avatar">
+      <a href="!#">
+        <img height="100" src="assets/img/avatar.png" width="100">
+      </a>
+    </div>
+    <br>
+  </div> 
+
+    <!-- Footer -->
+    <!-- <footer class="footer footer-custome">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-6 h-100 text-center text-lg-left my-auto sosmed-footer">
+            <span class="text-follow">Follow Us</span>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-angellist" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-6 h-100 text-center text-lg-right my-auto powered">
+            <p class="text-muted small mb-4 mb-lg-0">Powered by Product Hunt</p>
+          </div>
+        </div>
+      </div>
+    </footer>  -->  
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery/jquery.formchimp.js"></script>
+
+  <script> 
+      var words = [
+        "Hey, I’m Ardian, been working as backend engineer for 6 years, founder of <a href='http://www.madain.co.id'>Madain - Indonesia's software agency</a> and now I'm making Apisentris.",
+        "Building API is time- and cost-consuming, also emotional snowballing.<img class='card-img-top' src='assets/img/img.jpg' alt='Card image cap'>Apisentris is a service that converts the backend software to the modern architecture, API-centric, with no efforts.",
+        '<div class="remove-in-success"><span class="remove-in-error">Want APIs in your backend with hassle-free? I will contact you. </span><form method="post" action="https://apisentris.us17.list-manage.com/subscribe/post?u=a323e709cfc230e94606192b6&id=4b904c040a"><input type="text" class="form-control mb-2 mb-sm-0" placeholder="Enter your email" name="EMAIL"> <button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></form></div>',
+        ''
+      ];
+      
+      $('.hide').slideDown(1000);
+
+      setTimeout(function() {
+        $(".img-avatar").animate({
+          right: '70%'
+        })
+
+        jQuery(words).each(function(index, value) {
+     
+          setTimeout(function() {
+             $(".img-avatar").css({
+                'position': 'fixed'
+              });
+             if (index !=3){
+              $('div').removeClass('pseudo');
+              $('.chat-log').append('<br><div class="card pseudo"><div class="messages msg_receive"><p>'+value+'</p></div></div>');
+             }
+             if (index == 1) {
+              $('.chat-log').append("<div class='x'><br><br><br><br><br><br></div>");
+             }
+             if (index == 2) {
+              $('.x').remove();
+              $('.chat-log').append('<br><br><br><br><br><br>');
+              $('form').formchimp({
+                //'appendElement' : "h1",
+                // 'buttonText' : 'Thanks',
+                'errorMessage' : function() {
+                  $('.remove-in-error').html("I'm worried I can't contact you properly because of invalid email address.");
+                },
+                //'responseClass' : "mc-response",
+                'successMessage' : function() {
+                  $('.remove-in-success').html('Your email has been listed at the top of the list.<br>I will let you know once it is live. Thank you!');
+                },
+                //'url': actionUrl,
+              });
+
+             }
+
+             if (index == 3) {
+              index = 0
+              $(".img-avatar").css({
+                'position': 'absolute',
+                'bottom':'-595px'
+              });
+             }
+             $(".msg_container_base").stop().animate({ scrollTop: $(".msg_container_base")[0].scrollHeight}, 1000);
+           }, index*5000);
+          
+        });
+      }, 200);
+  </script>
+
+  </body>
+</html>
+<!-- https://stackoverflow.com/questions/47709773/how-do-you-create-an-api-server-based-on-data-from-an-existing-rails-postgres-we -->
